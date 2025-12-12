@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.8)
-project(bringup)
+cmake_minimum_required(VERSION 3.5)
+project(dta_bringup)
 
 find_package(ament_cmake REQUIRED)
 
-# Install launch files
+# Install the launch directory
 install(
   DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
