@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>motion_planner</name>
+  <version>0.0.1</version>
+  <description>PD-based motion planner for multi-robot TurtleBot3 system</description>
+
+  <maintainer email="mudit@example.com">Mudit</maintainer>
+  <license>MIT</license>
+
+  <!-- We depend on Python libraries and ROS2 packages -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+
+  <!-- If PD node uses numpy -->
+  <exec_depend>python3-numpy</exec_depend>
+
+  <!-- This is optional (for launch files) -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Export plugin information -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
+</package>

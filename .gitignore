@@ -1,0 +1,30 @@
+# ROS2 / Colcon
+build/
+install/
+log/
+.colcon/
+
+# Extra logs in src
+src/log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual envs
+venv/
+.env/
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# RViz, TF, temp artifacts
+*.rviz2
+frames.pdf
+
+# Do not version-control upstream TurtleBot3 source packages
+src/turtlebot3/
+src/turtlebot3_msgs/
+src/turtlebot3_simulations/
+src/turtlebot3_manipulation/

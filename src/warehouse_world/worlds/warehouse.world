@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="warehouse_world">
+    <include>
+      <uri>model://warehouse</uri>
+      <!-- Move/rotate the model if needed -->
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Basic lighting & physics -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <gravity>0 0 -9.81</gravity>
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <gui fullscreen="0"/>
+  </world>
+</sdf>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="warehouse">
+    <static>true</static>
+
+    <link name="warehouse_link">
+      <!-- Visual -->
+      <visual name="warehouse_visual">
+        <geometry>
+          <mesh>
+            <uri>model://warehouse/meshes/warehouse.stl</uri>
+            <!-- If your STL was authored in millimeters, change scale to 0.001 0.001 0.001 -->
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+
+      <!-- Collision (same mesh for simplicity; for speed, swap to primitives later) -->
+      <collision name="warehouse_collision">
+        <geometry>
+          <mesh>
+            <uri>model://warehouse/meshes/warehouse.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>5</max_contacts>
+      </collision>
+    </link>
+  </model>
+</sdf>
