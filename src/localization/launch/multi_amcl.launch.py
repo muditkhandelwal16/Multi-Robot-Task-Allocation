@@ -20,7 +20,7 @@ def generate_launch_description():
 
     declare_map_yaml = DeclareLaunchArgument(
         "map_yaml",
-        default_value="/home/mudit/map.yaml",
+        default_value="/home/mudit/turtlebot3_ws/src/maps/map.yaml",
         description="Absolute path to map.yaml",
     )
 
